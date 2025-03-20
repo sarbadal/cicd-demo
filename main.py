@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 from get_data import get_address
 from func.utils import get_firstname, get_lastname
 
@@ -25,6 +26,10 @@ def main() -> None:
             "country"
         ]
     ]
+    if not os.path.exists("data"):
+        os.makedirs("data")
+    
+    data.to_csv("data/output-7-54.csv", index=False)
     print(data.head())
 
 
