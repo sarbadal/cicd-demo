@@ -17,6 +17,7 @@ def main() -> None:
     )
     data: pd.DataFrame = data[
         [
+            "name",
             "first_name", 
             "last_name", 
             "house_number", 
@@ -30,7 +31,7 @@ def main() -> None:
         os.makedirs("data")
     
     data.to_csv("data/output-7-54.csv", index=False)
-    print(data.head(n=25))
+    print(data.head(n=15))
 
 
 if __name__ == "__main__":
