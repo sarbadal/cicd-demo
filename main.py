@@ -30,7 +30,7 @@ def main() -> None:
         os.makedirs("data")
     
     data.to_csv("data/output-7-54.csv", index=False)
-    print(data.head())
+    print(data.head(n=25))
 
 
 if __name__ == "__main__":
@@ -38,5 +38,5 @@ if __name__ == "__main__":
     pd.set_option('display.max_columns', 500)
     pd.set_option('display.width', 2000)
     pd.set_option('display.max_colwidth', 35)
-    
+
     main()
