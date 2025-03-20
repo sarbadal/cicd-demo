@@ -34,4 +34,9 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    pd.set_option('display.max_rows', 500)
+    pd.set_option('display.max_columns', 500)
+    pd.set_option('display.width', 2000)
+    pd.set_option('display.max_colwidth', 35)
+    
     main()
