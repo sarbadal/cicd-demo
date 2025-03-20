@@ -34,4 +34,5 @@ jobs:
       run: |
         cd /home/runner/work/cicd-demo/cicd-demo
         ls -la
+        cd data
 
