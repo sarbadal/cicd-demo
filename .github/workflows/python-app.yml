@@ -36,4 +36,8 @@ jobs:
         ls -la
         cd data
         ls -la
+    - name: Display the csv file
+      run: |
+        cd /home/runner/work/cicd-demo/cicd-demo/data
+        cat output-7-54.csv
 
