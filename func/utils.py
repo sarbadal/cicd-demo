@@ -15,3 +15,7 @@ def get_lastname(full_name: str) -> str:
     names: str = full_name.split(" ")
     if len(names) < 2: return ""
     return names[-1]
+
+
+if __name__ == "__main__":
+    ...
